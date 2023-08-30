@@ -1,0 +1,30 @@
+ATIVIDADE
+CritÃ©rios de aceitaÃ§Ã£o:
+a) Uso de interfaces Ã© requerido
+b) Uso de heranÃ§a Ã© recomendado
+c) Uso de classes abstratas Ã© opcional
+
+//diferentes objetos de diferentes naturezas processados pelo mesmo método
+
+A UniLe, famosa universadade de Curitiba, solicitou o desenvolvimento de duas funcionalidades:
+1. Processamento de resultados dos estudantes
+
+Para estudantes da graduação a regra de resultados Ã©:
+Se média igual ou maior que 6, APROVADO
+Se média maior que 4, EXAME FINAL
+Se não, REPROVADO
+
+Para estudantes da especialização, a regra Ã©:
+Se conceito entre {A,B ou C}, APROVADO
+Se conceito igual a D, REPROVADO
+Se nÃ£o houver conceito, PENDENTE
+
+Sabe-se que a UniLe estÃ¡ em processo de aprovaÃ§Ã£o de Mestrados e Doutorados e nÃ£o hÃ¡ certeza sobre a regra de resultados para estudantes desses cursos.
+
+Pede-se: Implemente um objeto certificador que receba o estudante e determine o resultado de acordo com cada regra de aprovaÃ§Ã£o.
+--------------------------------------------------------
+
+2. Processamento de pagamento de professores
+SÃ£o dois tipos de professores, aqueles cujo salÃ¡rio Ã© determinado em contrato com um valor mensal fixo e aquele cujo salÃ¡rio Ã© determinado pelo nÃºmero de horas trabalhadas (varÃ¡vel) multiplicado por um valor-hora (fixo).
+
+Implemente um mÃ©todo que receba um objeto que represente um professor e calcule o valor a ser depositado como remuneraÃ§Ã£oe em sua conta.
