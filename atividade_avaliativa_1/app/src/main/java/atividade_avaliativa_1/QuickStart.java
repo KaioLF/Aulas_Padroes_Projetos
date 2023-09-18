@@ -12,7 +12,7 @@ import org.bson.Document;
 
 public class QuickStart {
     public static void main(String[] args) {
-        String connectionString = "mongodb+srv://Kaiotico:%234KgdZZeM2%24@cluster0.ibzp6c4.mongodb.net/?retryWrites=true&w=majority%22";
+        String connectionString = " ";
 
         ServerApi serverApi = ServerApi.builder()
                 .version(ServerApiVersion.V1)
