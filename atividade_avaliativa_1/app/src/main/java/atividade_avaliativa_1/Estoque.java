@@ -18,10 +18,6 @@ public class Estoque implements I_Armazenamento {
         veiculos.remove(veiculo);
     }
 
-    public List<Veiculo> listarVeiculos() {
-        return veiculos;
-    }
-
     public List<String> listarInformacoesVeiculos() {
         List<String> informacoes = new ArrayList<>();
         for (Veiculo veiculo : veiculos) {
@@ -32,13 +28,24 @@ public class Estoque implements I_Armazenamento {
 
     @Override
     public List<Carro> listarCarros() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarCarros'");
+        List<Carro> carros = new ArrayList<>();
+        for (Veiculo veiculo : veiculos) {
+            if (veiculo instanceof Carro) {
+                carros.add((Carro) veiculo);
+            }
+        }
+        return carros;
     }
 
     @Override
     public List<Motocicleta> listarMotocicletas() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarMotocicletas'");
+        List<Motocicleta> motocicletas = new ArrayList<>();
+        for (Veiculo veiculo : veiculos) {
+            if (veiculo instanceof Motocicleta) {
+                motocicletas.add((Motocicleta) veiculo);
+            }
+        }
+        return motocicletas;
     }
 }
+

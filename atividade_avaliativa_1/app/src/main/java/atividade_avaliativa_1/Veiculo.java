@@ -51,5 +51,4 @@ public abstract class Veiculo {
         return "Marca: " + marca + ", Modelo: " + modelo + ", Ano de Fabricação: " + anoFabricacao + ", Preço: "
                 + preco;
     }
-
 }
