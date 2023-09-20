@@ -56,10 +56,10 @@ public class ArquivoArmazenamento implements I_Armazenamento {
                     String modelo = partes[1].trim().replace("Modelo: ", "");
                     String anoFabricacao = partes[2].trim().replace("Ano de Fabricação: ", "");
                     double preco = Double.parseDouble(partes[3].trim().replace("Preço: ", ""));
-                    int cilindradas = Integer.parseInt(partes[4].trim().replace("Número de Portas: ", ""));
+                    int numPortas = Integer.parseInt(partes[4].trim().replace("Número de Portas: ", ""));
 
                     // Cria um novo objeto Carro e adiciona à lista
-                    Carro carro = new Carro(marca, modelo, anoFabricacao, preco, cilindradas);
+                    Carro carro = new Carro(marca, modelo, anoFabricacao, preco, numPortas);
                     carros.add(carro);
                 }
             }
