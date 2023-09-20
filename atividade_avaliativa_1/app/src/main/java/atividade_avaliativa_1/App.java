@@ -30,10 +30,12 @@ public class App {
         // Cria uma instância de Concessionaria com o ArquivoArmazenamento
         Concessionaria concessionariaComArquivo = new Concessionaria(arquivoArmazenamento);
 
-        // Adicione os veículos ao estoque da concessionária
+        // Adicione os veículos ao estoque da concessionária com o Mongo
         concessionariaComMongo.adicionarVeiculoAoEstoque(veiculo1);
         concessionariaComMongo.adicionarVeiculoAoEstoque(veiculo2);
 
+
+        // Adicione os veículos ao estoque da concessionária com o um arquivo txt
         //concessionariaComArquivo.adicionarVeiculoAoEstoque(veiculo1);
         //concessionariaComArquivo.adicionarVeiculoAoEstoque(veiculo2);
         
