@@ -1,8 +1,2 @@
-Marca: CARRO14, Modelo: TESTE13, Ano de Fabricação: 2023, Preço: 0.0, Número de Portas: 2
-Marca: MOTO14, Modelo: TESTE13, Ano de Fabricação: 2022, Preço: 9000.0, Cilindradas: 500
-Marca: CARRO15, Modelo: TESTE15, Ano de Fabricação: 2023, Preço: 0.0, Número de Portas: 2
-Marca: MOTO15, Modelo: TESTE15, Ano de Fabricação: 2022, Preço: 9000.0, Cilindradas: 500
-Marca: CARRO16, Modelo: TESTE16, Ano de Fabricação: 2023, Preço: 0.0, Número de Portas: 2
-Marca: MOTO16, Modelo: TESTE16, Ano de Fabricação: 2022, Preço: 9000.0, Cilindradas: 500
 Marca: Chevrolet, Modelo: Celta, Ano de Fabricação: 2014, Preço: 34000.0, Número de Portas: 4
 Marca: Honda, Modelo: PCX, Ano de Fabricação: 2023, Preço: 16800.0, Cilindradas: 160

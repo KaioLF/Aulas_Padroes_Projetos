@@ -31,17 +31,17 @@ public class App {
         Concessionaria concessionariaComArquivo = new Concessionaria(arquivoArmazenamento);
 
         // Adicione os veículos ao estoque da concessionária com o Mongo
-        concessionariaComMongo.adicionarVeiculoAoEstoque(veiculo1);
-        concessionariaComMongo.adicionarVeiculoAoEstoque(veiculo2);
+        //concessionariaComMongo.adicionarVeiculoAoEstoque(veiculo1);
+        //concessionariaComMongo.adicionarVeiculoAoEstoque(veiculo2);
 
 
         // Adicione os veículos ao estoque da concessionária com o um arquivo txt
-        //concessionariaComArquivo.adicionarVeiculoAoEstoque(veiculo1);
-        //concessionariaComArquivo.adicionarVeiculoAoEstoque(veiculo2);
+        concessionariaComArquivo.adicionarVeiculoAoEstoque(veiculo1);
+        concessionariaComArquivo.adicionarVeiculoAoEstoque(veiculo2);
         
 
         // Liste informações sobre todos os veículos em estoque
-        List<String> informacoesVeiculos = concessionariaComMongo.listarInformacoesVeiculosEmEstoque();//alterar para concessionariaComArquivo para utilizar o arquivo txt
+        List<String> informacoesVeiculos = concessionariaComArquivo.listarInformacoesVeiculosEmEstoque();//alterar para concessionariaComArquivo para utilizar o arquivo txt
         System.out.println("------------------------------------------------------------");
         System.out.println("------------------------------------------------------------");
         System.out.println("Informações sobre os veículos em estoque:");
@@ -50,7 +50,7 @@ public class App {
         }
 
         // Liste carros em estoque
-        List<Carro> carros = concessionariaComMongo.listarCarros();//alterar para concessionariaComArquivo para utilizar o arquivo txt
+        List<Carro> carros = concessionariaComArquivo.listarCarros();//alterar para concessionariaComArquivo para utilizar o arquivo txt
         System.out.println("------------------------------------------------------------");
         System.out.println("------------------------------------------------------------");
         System.out.println("\nCarros em estoque:");
@@ -64,7 +64,7 @@ public class App {
         }
 
         // Liste motocicletas em estoque
-        List<Motocicleta> motocicletas = concessionariaComMongo.listarMotocicletas();//alterar para concessionariaComArquivo para utilizar o arquivo txt
+        List<Motocicleta> motocicletas = concessionariaComArquivo.listarMotocicletas();//alterar para concessionariaComArquivo para utilizar o arquivo txt
         System.out.println("------------------------------------------------------------");
         System.out.println("------------------------------------------------------------");
         System.out.println("\nMotocicletas em estoque:");
