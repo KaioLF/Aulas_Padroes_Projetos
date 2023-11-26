@@ -1,0 +1,27 @@
+Herança e Implementação (AgenteLogistico):
+
+A classe AgenteLogistico é uma classe abstrata que implementa a interface iAgenteLogistico. Isso significa que ela fornece implementações para os métodos definidos na interface, e outras classes podem herdar dessa classe abstrata para compartilhar comportamentos comuns.
+
+
+Herança e Implementação (Mastercard, Senf, Visa):
+
+As classes Mastercard, Senf, e Visa implementam a interface iPaymentProvider. Essa implementação garante que essas classes forneçam uma implementação específica para o método pagar definido na interface.
+Associação (Correios, Loggi, TotalExpress):
+
+As classes Correios, Loggi, e TotalExpress estão associadas à interface iAgenteLogistico. Isso indica que essas classes fornecem implementações específicas para os métodos definidos na interface.
+Associação (PaymentProviderFactory):
+
+A classe PaymentProviderFactory está associada à interface iPaymentProvider. Isso significa que a fábrica de provedores de pagamento depende da interface para criar instâncias específicas de provedores de pagamento.
+
+
+Composição (Ecommerce):
+
+A classe Ecommerce possui uma composição com a interface iPaymentProvider e a classe Carrinho. Isso indica uma relação forte, onde um Ecommerce é composto por instâncias de um provedor de pagamento e um carrinho.
+
+
+Agregação (Carrinho):
+
+A classe Carrinho possui uma agregação com a classe ProdutoQuantidade. Isso significa que o Carrinho contém uma lista de ProdutoQuantidade, mas a existência do Carrinho não é estritamente dependente da existência de ProdutoQuantidade.
+Composição (ProdutoQuantidade):
+
+A classe ProdutoQuantidade possui uma composição com a classe Produto. Isso indica que uma instância de ProdutoQuantidade é composta por uma instância de Produto, e a existência de ProdutoQuantidade depende da existência de Produto.
