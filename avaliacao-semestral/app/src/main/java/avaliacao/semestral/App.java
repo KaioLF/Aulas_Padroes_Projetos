@@ -7,14 +7,14 @@ public class App {
     
 
     public static void main(String[] args) throws Exception {
-        
+
         PaymentProviderFactory paymentProviderFactory =  new PaymentProviderFactory();
         AgenteLogisticoFactory agenteLogisticoFactory = new AgenteLogisticoFactory();
         ProdutoFactory produtoFactory = new ProdutoFactory();
         Carrinho carrinho = new Carrinho();
 
         ProdutoQuantidade produtoQuantidade = produtoFactory.getProduto("Bicicleta", 630.90, 1);
-        carrinho.addProdutos(produtoQuantidade);
+        carrinho.addProdutos(produtoQuantidade);    
         
                 
         iPaymentProvider paymentProvider = paymentProviderFactory.getPaymentProvider("Mastercard");

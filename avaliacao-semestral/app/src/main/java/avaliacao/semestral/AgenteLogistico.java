@@ -5,8 +5,6 @@ import java.util.ArrayList;
 
 public abstract class AgenteLogistico implements iAgenteLogistico {
 
-    private iAgenteLogistico iAgenteLogistico;
-
     private String endereco;
     private List <ProdutoQuantidade> pacote = new ArrayList<>();
 
@@ -40,7 +38,4 @@ public abstract class AgenteLogistico implements iAgenteLogistico {
     public void setPacote(List<ProdutoQuantidade> pacote) {
         this.pacote = pacote;
     }
-
-    
-
 }
